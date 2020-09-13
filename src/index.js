@@ -14,3 +14,6 @@ log.log(calc.add(1, 2, 3));
 
 //npx webpack --mode development
 //for development mode
+
+//"scripts": {
+//    "start":"webpack"}

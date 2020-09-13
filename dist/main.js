@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./log */ \"./src/log.js\");\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n\r\n\r\n\r\nconst calc = new _calc__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst log = new _log__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\n\r\nlog.log(calc.add(1, 2, 3));\r\n\r\n//npx webpack\r\n//for prodaction mode\r\n\r\n//npx webpack --mode development\r\n//for development mode\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./log */ \"./src/log.js\");\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n\r\n\r\n\r\nconst calc = new _calc__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\nconst log = new _log__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\r\n\r\nlog.log(calc.add(1, 2, 3));\r\n\r\n//npm install --save-dev webpack webpack-cli\r\n\r\n//запуск\r\n//npx webpack\r\n//for prodaction mode\r\n\r\n//npx webpack --mode development\r\n//for development mode\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
