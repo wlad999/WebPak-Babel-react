@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlagin = require("mini-css-extract-plugin");
 //require - аналог import для node.js
 //webpack.config.js исполняется в среде Node.js
 module.exports = {
@@ -43,30 +44,12 @@ module.exports = {
       //-----------Loading css--------------
       {
         test: /\.(css)$/,
-        use: [
-          //{ loader:
-          "style-loader",
-          // },
-          //{
-          //  loader:
-          "css-loader",
-          //},
-        ],
+        use: [MiniCssExtractPlagin.loader, "css-loader"],
       },
       //-----------Loading SASS/SCSS--------------
       {
         test: /\.(s[ca]ss)$/,
-        use: [
-          //{ loader:
-          "style-loader",
-          // },
-          //{ loader:
-          "css-loader",
-          // },
-          //{ loader:
-          "sass-loader",
-          // },
-        ],
+        use: [MiniCssExtractPlagin.loader, "css-loader", "sass-loader"],
       },
     ],
   },
@@ -75,6 +58,9 @@ module.exports = {
       title: "Hello World",
       buildTime: new Date().toString(),
       template: "public/index.html",
+    }),
+    new MiniCssExtractPlagin({
+      filename: "main-[hash:8].css",
     }),
   ],
 };
