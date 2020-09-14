@@ -1,3 +1,6 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+//require - аналог import для node.js
+//webpack.config.js исполняется в среде Node.js
 module.exports = {
   mode: "development",
   module: {
@@ -67,4 +70,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "public/index.html",
+    }),
+  ],
 };
