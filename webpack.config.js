@@ -37,6 +37,7 @@ module.exports = {
           },
         ],
       },
+      //-----------Loading css--------------
       {
         test: /\.(css)$/,
         use: [
@@ -44,6 +45,15 @@ module.exports = {
           {
             loader: "css-loader",
           },
+        ],
+      },
+      //-----------Loading SASS/SCSS--------------
+      {
+        test: /\.(s[ca]ss)$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "sass-loader" },
         ],
       },
     ],
