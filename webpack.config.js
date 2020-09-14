@@ -5,11 +5,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_module/,
-        use: [
-          {
-            loader: "babel-loader",
-          },
-        ],
+        //use: [
+        //  {
+        loader: "babel-loader",
+        //  },
+        //],
       },
       //-----------------Loading images---------------------------
       {
@@ -41,19 +41,28 @@ module.exports = {
       {
         test: /\.(css)$/,
         use: [
-          { loader: "style-loader" },
-          {
-            loader: "css-loader",
-          },
+          //{ loader:
+          "style-loader",
+          // },
+          //{
+          //  loader:
+          "css-loader",
+          //},
         ],
       },
       //-----------Loading SASS/SCSS--------------
       {
         test: /\.(s[ca]ss)$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
-          { loader: "sass-loader" },
+          //{ loader:
+          "style-loader",
+          // },
+          //{ loader:
+          "css-loader",
+          // },
+          //{ loader:
+          "sass-loader",
+          // },
         ],
       },
     ],
