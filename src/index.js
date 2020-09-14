@@ -1,15 +1,9 @@
-import Log from "./log";
-import Calc from "./calc";
-import img from "./logo512.png";
+import React from "react";
+import ReactDOM from "react-dom";
 
-const calc = new Calc();
-const log = new Log();
+const App = () => <h1>Hello!!!</h1>;
 
-log.log(calc.add(1, 2, 3));
-
-const el = document.createElement("img");
-el.src = img;
-document.body.appendChild(el);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 //npm install --save-dev webpack webpack-cli
 

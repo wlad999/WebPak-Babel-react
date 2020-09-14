@@ -2,6 +2,15 @@ module.exports = {
   mode: "development",
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_module/,
+        use: [
+          {
+            loader: "babel-loader",
+          },
+        ],
+      },
       //-----------------Loading images---------------------------
       {
         test: /\.(png|jpeg|jpg|gif|ico)$/,
